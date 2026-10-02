@@ -19,5 +19,5 @@ window.PROOFMARKET_CONFIG = {
   // TODO: Formspree-compatible endpoint, e.g. "https://formspree.io/f/abcdwxyz".
   // Leave empty ("") to use the mailto: fallback (form opens the visitor's email app, prefilled).
   // TODO：Formspree 兼容的表单地址；留空则使用邮件备用方案（打开访客的邮件客户端并预填内容）。
-  FORM_ENDPOINT: ""
+  FORM_ENDPOINT: "https://formspree.io/f/xjykqjop"
 };
