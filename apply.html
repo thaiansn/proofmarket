@@ -52,15 +52,47 @@
     </div>
   </header>
   <main id="main" class="section">
-    <div class="wrap form-layout">
-      <div class="prose" style="max-width:none;">
+    <div class="wrap apply-top">
+      <div class="prose">
         <p class="hero-kicker"><span class="i18n-en">Sellers</span><span class="i18n-zh">卖家</span></p>
         <h1><span class="i18n-en">Apply to sell your software business.</span><span class="i18n-zh">申请出售你的软件项目。</span></h1>
         <p><span class="i18n-en">Takes about 5 minutes. During the pilot, the first sellers get a <strong>free verified listing</strong>. You can write in English or Chinese.</span><span class="i18n-zh">大约 5 分钟即可完成。试点期间，首批卖家可<strong>免费获得核验挂牌</strong>。中英文填写均可。</span></p>
-        <h2><span class="i18n-en">What happens next</span><span class="i18n-zh">接下来会发生什么</span></h2>
+      </div>
+      <section class="prep" id="prepare" aria-labelledby="prepare-title">
+        <h2 id="prepare-title"><span class="i18n-en">What to prepare</span><span class="i18n-zh">提交前请准备以下证明</span></h2>
+        <p class="prep-lead"><span class="i18n-en">Gather this evidence before you apply — it makes verification much faster. Just have it ready; you don't upload anything in the form.</span><span class="i18n-zh">申请前先把这些材料准备好，核验会快很多。只需准备好即可，表单里无需上传任何文件。</span></p>
+        <ol class="prep-grid">
+          <li><h3><span class="i18n-en">Revenue proof</span><span class="i18n-zh">收入证明</span></h3>
+            <p><span class="i18n-en">Screenshot or screen recording of your payment dashboard — Stripe, Paddle, Lemon Squeezy, App Store Connect, Google Play Console, AdSense, WeChat Pay / Alipay merchant — covering the last 12 months (or since launch). We may ask for a live screen-share call.</span><span class="i18n-zh">收款后台的截图或录屏——Stripe、Paddle、LemonSqueezy、App Store Connect、Google Play Console、AdSense、微信支付 / 支付宝商户后台等，覆盖近 12 个月（或自上线以来）。我们可能会请你实时屏幕共享。</span></p></li>
+          <li><h3><span class="i18n-en">Traffic &amp; users</span><span class="i18n-zh">流量与用户</span></h3>
+            <p><span class="i18n-en">Analytics screenshots (Google Analytics, Plausible, Umami, etc.) plus current active-user or subscriber counts.</span><span class="i18n-zh">统计后台截图（Google Analytics、Plausible、Umami 等），以及当前活跃用户数或订阅人数。</span></p></li>
+          <li><h3><span class="i18n-en">Domain ownership</span><span class="i18n-zh">域名所有权</span></h3>
+            <p><span class="i18n-en">A screenshot of your domain registrar account, or add a DNS TXT record that we provide.</span><span class="i18n-zh">域名注册商账户截图，或按我们提供的内容添加一条 DNS TXT 记录。</span></p></li>
+          <li><h3><span class="i18n-en">Code &amp; asset ownership</span><span class="i18n-zh">代码与资产所有权</span></h3>
+            <p><span class="i18n-en">GitHub / GitLab repo access or a screenshot, app store developer account, Chrome Web Store dashboard, etc.</span><span class="i18n-zh">GitHub / GitLab 仓库访问权限或截图、应用商店开发者账号、Chrome 网上应用店后台等。</span></p></li>
+          <li><h3><span class="i18n-en">Running costs</span><span class="i18n-zh">运营成本</span></h3>
+            <p><span class="i18n-en">Monthly running costs — hosting, APIs, tools — so we can calculate profit.</span><span class="i18n-zh">每月运营成本——服务器、API、各类工具——用于计算利润。</span></p></li>
+          <li><h3><span class="i18n-en">Identity</span><span class="i18n-zh">身份与联系方式</span></h3>
+            <p><span class="i18n-en">Your name and a contact where you can be reached. The operator may ask for a brief video call.</span><span class="i18n-zh">你的姓名和能联系到你的方式。运营者可能会请你进行简短的视频通话。</span></p></li>
+        </ol>
+        <div class="prep-notes" role="note">
+          <h3><span class="i18n-en">Good to know</span><span class="i18n-zh">注意事项</span></h3>
+          <ul>
+            <li><span class="i18n-en"><strong>Don't upload files in the form</strong> — just tick what you can provide.</span><span class="i18n-zh"><strong>不要在表单中上传文件</strong>——只需勾选你能提供的材料。</span></li>
+            <li><span class="i18n-en">The operator will email you to collect the evidence.</span><span class="i18n-zh">运营者会通过邮件联系你收取证明材料。</span></li>
+            <li><span class="i18n-en"><strong>Never send passwords</strong>, API keys or login codes.</span><span class="i18n-zh"><strong>切勿发送密码</strong>、API 密钥或登录验证码。</span></li>
+            <li><span class="i18n-en">Verification is manual and takes a few days.</span><span class="i18n-zh">核验为人工进行，需要几天时间。</span></li>
+            <li><span class="i18n-en">Listings without proof won't be published.</span><span class="i18n-zh">无法提供证明的项目不会挂牌。</span></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="wrap form-layout">
+      <div class="prose" style="max-width:none;">
+        <h2 class="apply-next-title"><span class="i18n-en">What happens next</span><span class="i18n-zh">接下来会发生什么</span></h2>
         <ol>
           <li><span class="i18n-en">The operator reads your application and replies by email (and WeChat, if you left it).</span><span class="i18n-zh">运营者阅读你的申请，并通过邮件（如留了微信，也可能通过微信）回复你。</span></li>
-          <li><span class="i18n-en">We ask for ownership and revenue evidence — screen-share or exports. Never send passwords or API keys.</span><span class="i18n-zh">我们会请你提供所有权与收入证明——屏幕共享或数据导出均可。请勿发送密码或 API 密钥。</span></li>
+          <li><span class="i18n-en">We ask for the evidence in the <a href="#prepare">checklist above</a> — screenshots, screen-share or exports. Never send passwords or API keys.</span><span class="i18n-zh">我们会请你提供<a href="#prepare">上方清单</a>中的证明——截图、屏幕共享或数据导出均可。请勿发送密码或 API 密钥。</span></li>
           <li><span class="i18n-en">We write a verification note and help prepare a clear bilingual listing for overseas buyers.</span><span class="i18n-zh">我们撰写核验说明，并协助准备面向海外买家的清晰中英文挂牌。</span></li>
           <li><span class="i18n-en">Your listing goes live for 90 days; we introduce interested buyers. You agree terms and transfer directly — no escrow by ProofMarket.</span><span class="i18n-zh">挂牌上线 90 天，我们为你介绍感兴趣的买家。双方直接谈判与交割——ProofMarket 不托管资金。</span></li>
         </ol>
@@ -119,6 +151,18 @@
             <label for="f-revenue_proof"><span class="i18n-en">Revenue proof you can show</span><span class="i18n-zh">可提供的收入证明</span><span class="req" aria-hidden="true">*</span></label>
             <select id="f-revenue_proof" name="revenue_proof" data-label="Revenue proof you can show / 可提供的收入证明" required><option value="" data-en="Choose…" data-zh="请选择…">Choose…</option><option value="stripe_paddle_lemonsqueezy" data-en="Stripe / Paddle / Lemon Squeezy dashboard or export" data-zh="Stripe / Paddle / Lemon Squeezy 后台或导出">Stripe / Paddle / Lemon Squeezy dashboard or export</option><option value="app_store_google_play" data-en="App Store Connect / Google Play Console reports" data-zh="App Store Connect / Google Play 后台报表">App Store Connect / Google Play Console reports</option><option value="paypal_gumroad_platform" data-en="PayPal / Gumroad / other platform payouts" data-zh="PayPal / Gumroad / 其他平台提现记录">PayPal / Gumroad / other platform payouts</option><option value="bank_statements" data-en="Bank statements" data-zh="银行流水">Bank statements</option><option value="ads_sponsorship" data-en="Ad network / sponsorship reports" data-zh="广告平台 / 赞助收入报表">Ad network / sponsorship reports</option><option value="not_sure" data-en="Not sure yet" data-zh="暂不确定">Not sure yet</option></select>
             <p class="form-hint"><span class="i18n-en">Don't send files or passwords now — we'll ask for evidence by email.</span><span class="i18n-zh">现在不用发送文件或密码——我们会通过邮件索取证明。</span></p>
+          </div>
+          <div class="form-group">
+            <fieldset class="check-grid">
+              <legend><span class="i18n-en">Proof I can provide</span><span class="i18n-zh">我能提供的证明</span><span class="opt"><span class="i18n-en">(optional)</span><span class="i18n-zh">（选填）</span></span></legend>
+              <label class="check-item"><input type="checkbox" name="proof_available" value="revenue_dashboard" data-group data-label="Proof I can provide / 我能提供的证明"><span><span class="i18n-en">Revenue dashboard (12 mo)</span><span class="i18n-zh">收入后台截图</span></span></label>
+              <label class="check-item"><input type="checkbox" name="proof_available" value="analytics_users" data-group data-label="Proof I can provide / 我能提供的证明"><span><span class="i18n-en">Analytics &amp; user counts</span><span class="i18n-zh">流量与用户数据</span></span></label>
+              <label class="check-item"><input type="checkbox" name="proof_available" value="domain" data-group data-label="Proof I can provide / 我能提供的证明"><span><span class="i18n-en">Domain ownership</span><span class="i18n-zh">域名所有权</span></span></label>
+              <label class="check-item"><input type="checkbox" name="proof_available" value="code_assets" data-group data-label="Proof I can provide / 我能提供的证明"><span><span class="i18n-en">Code / asset ownership</span><span class="i18n-zh">代码 / 资产所有权</span></span></label>
+              <label class="check-item"><input type="checkbox" name="proof_available" value="monthly_costs" data-group data-label="Proof I can provide / 我能提供的证明"><span><span class="i18n-en">Monthly running costs</span><span class="i18n-zh">月度运营成本</span></span></label>
+              <label class="check-item"><input type="checkbox" name="proof_available" value="identity_video_call" data-group data-label="Proof I can provide / 我能提供的证明"><span><span class="i18n-en">ID &amp; brief video call</span><span class="i18n-zh">身份 / 视频通话</span></span></label>
+            </fieldset>
+            <p class="form-hint"><span class="i18n-en">See <a href="#prepare">What to prepare</a>. Tick everything you can show — no files needed now.</span><span class="i18n-zh">参见<a href="#prepare">提交前准备</a>。勾选所有你能提供的材料——现在无需发送文件。</span></p>
           </div>
           <div class="form-group">
             <label for="f-notes"><span class="i18n-en">Anything else</span><span class="i18n-zh">补充说明</span><span class="opt"><span class="i18n-en">(optional)</span><span class="i18n-zh">（选填）</span></span></label>

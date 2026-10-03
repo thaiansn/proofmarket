@@ -476,3 +476,37 @@ html[lang="en"] .i18n-zh { display: none !important; }
 .contact-strip p { margin: 0; }
 .footer-contact a { word-break: break-all; }
 @media (max-width: 380px) { .nav-actions .btn-sm { padding: 0.4rem 0.6rem; } .nav-actions { gap: 0.4rem; } }
+/* Apply page: evidence checklist above the seller form */
+.apply-top { margin-bottom: 2.5rem; }
+.prep {
+  margin-top: 1.75rem; background: var(--bg-elevated); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 1.6rem 1.75rem; scroll-margin-top: 96px;
+}
+.prep h2 { margin: 0 0 0.35rem; }
+.prep-lead { margin: 0 0 1.15rem; color: var(--ink-soft); max-width: 46rem; }
+.prep-grid { list-style: none; margin: 0; padding: 0; counter-reset: prep; display: grid; gap: 0.85rem; grid-template-columns: repeat(3, 1fr); }
+.prep-grid li {
+  counter-increment: prep; position: relative; background: var(--bg); border: 1px solid var(--bg-muted);
+  border-radius: var(--radius); padding: 0.95rem 1rem 0.95rem 3rem; margin: 0;
+}
+.prep-grid li::before {
+  content: counter(prep); position: absolute; left: 0.9rem; top: 0.95rem;
+  width: 1.5rem; height: 1.5rem; border-radius: 50%; background: var(--accent); color: #fff;
+  font-family: var(--font-mono); font-size: 0.78rem; font-weight: 650;
+  display: flex; align-items: center; justify-content: center;
+}
+.prep-grid h3 { font-size: 1rem; margin: 0 0 0.3rem; }
+.prep-grid p { font-size: 0.875rem; margin: 0; color: var(--ink-soft); line-height: 1.55; }
+.prep-notes {
+  margin-top: 1rem; background: var(--accent-soft); border: 1px solid #b8d4d0; border-radius: var(--radius);
+  padding: 0.9rem 1.1rem; color: var(--accent-hover);
+}
+.prep-notes h3 { font-size: 0.95rem; margin: 0 0 0.35rem; color: inherit; }
+.prep-notes ul { margin: 0; padding-left: 1.15rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.2rem 2rem; font-size: 0.9rem; }
+.form-layout .apply-next-title { margin-top: 0; }
+@media (max-width: 900px) { .prep-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) {
+  .prep { padding: 1.15rem 1rem; }
+  .prep-grid, .prep-notes ul { grid-template-columns: 1fr; }
+}
+.form-group .check-item { display: flex; margin-bottom: 0; } /* keep wrapped labels aligned beside the checkbox */
