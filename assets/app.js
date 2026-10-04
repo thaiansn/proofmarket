@@ -1,4 +1,5 @@
-/* ProofMarket — i18n, mobile nav, marketplace filters, real form submission (Formspree-compatible + mailto fallback) */
+/* ProofMarket — i18n, mobile nav, marketplace filters, real form submission (Formspree-compatible + mailto fallback).
+ * Form types (data-form-type): seller | buyer | founder_raise | investor — sent as form_type with a distinct _subject. */
 (function () {
   "use strict";
 
@@ -185,13 +186,19 @@
 
   function subjectFor(type, d) {
     if (type === "seller") return "ProofMarket seller application: " + (d.project_name || d.name || "");
+    if (type === "founder_raise") return "ProofMarket early-stage project (founder): " + (d.project_name || d.name || "") + (d.stage ? " [" + d.stage + "]" : "");
+    if (type === "investor") return "ProofMarket investor application: " + (d.name || "") + (d.check_size ? " (" + d.check_size + ")" : "");
     return "ProofMarket buyer interest: " + (d.name || "") + (d.budget ? " (" + d.budget + ")" : "");
   }
 
   function plainText(type, c) {
-    var head = type === "seller"
-      ? "ProofMarket — seller application / 卖家申请"
-      : "ProofMarket — buyer interest / 买家意向";
+    var heads = {
+      seller: "ProofMarket — seller application / 卖家申请",
+      buyer: "ProofMarket — buyer interest / 买家意向",
+      founder_raise: "ProofMarket — early-stage project submission / 早期项目提交",
+      investor: "ProofMarket — investor application / 投资人申请"
+    };
+    var head = heads[type] || heads.buyer;
     var lines = [head, ""];
     c.rows.forEach(function (r) {
       lines.push(r.label + ": " + (c.data[r.key] || "-"));
@@ -263,6 +270,20 @@
 
   function successHTML(type, email) {
     var e = esc(email);
+    if (type === "founder_raise") {
+      return "<strong>" + t("Project submitted — thank you.", "项目已提交，谢谢！") + "</strong>" +
+        "<p>" + t(
+          "The operator reviews every submission manually and will reply to <strong>" + e + "</strong> by email about verification. Nothing is published until you approve the text, and no one gets your contact details without your consent. No automatic confirmation email is sent.",
+          "运营者会人工审核每一份提交，并通过邮件回复至 <strong>" + e + "</strong>，沟通核验事宜。未经你确认，不会发布任何内容；未经你同意，任何人都拿不到你的联系方式。系统不会自动发送确认邮件。"
+        ) + "</p>";
+    }
+    if (type === "investor") {
+      return "<strong>" + t("Application sent — thank you.", "申请已发送，谢谢！") + "</strong>" +
+        "<p>" + t(
+          "The operator will review your application and reply to <strong>" + e + "</strong>. Introductions are manual, need the founder's consent and are not guaranteed. ProofMarket never takes investments or handles money.",
+          "运营者会审核你的申请，并回复至 <strong>" + e + "</strong>。引荐为人工进行、需经创始人同意，且不保证成功。ProofMarket 从不接受投资，也不经手资金。"
+        ) + "</p>";
+    }
     return type === "seller"
       ? "<strong>" + t("Application sent — thank you.", "申请已发送，谢谢！") + "</strong>" +
         "<p>" + t(

@@ -37,10 +37,12 @@
 
 - **卖家申请**：`apply.html`（姓名、邮箱、微信选填、项目名称、网址、类别、月均收入、月均利润、期望售价、收入证明类型、补充说明、同意条款）。
 - **买家意向**：`buy.html`（姓名、邮箱、预算范围、感兴趣类别、补充说明、同意隐私政策）。
+- **早期项目提交（创始人）**：`founder-apply.html`（`form_type=founder_raise`，邮件主题 `ProofMarket early-stage project (founder): 项目名 [阶段]`）。
+- **投资人申请**：`investor-apply.html`（`form_type=investor`，邮件主题 `ProofMarket investor application: 姓名 (投资金额档)`；含合格投资者自我声明）。
 - 配置了 `FORM_ENDPOINT` 时：用 `fetch` 以 JSON 方式 POST（Formspree AJAX 格式），根据返回结果显示**真实的**成功或失败提示；失败时自动提供“改用邮件发送”按钮 + 可复制的全文。
 - 未配置时：打开访客的邮件客户端，预填收件人（`CONTACT_EMAIL`）、主题和全部字段；同时页面上显示全文和“复制”按钮，以防邮件客户端没有弹出。
 - 含隐藏的防垃圾字段 `_gotcha`（Formspree 原生支持）。
-- 邮件主题示例：`ProofMarket seller application: 项目名` / `ProofMarket buyer interest: 姓名 (预算)`；提交内容带 `form_type`（seller / buyer）字段，方便在 Formspree 后台区分。
+- 邮件主题示例：`ProofMarket seller application: 项目名` / `ProofMarket buyer interest: 姓名 (预算)`；提交内容带 `form_type`（seller / buyer / founder_raise / investor）字段，方便在 Formspree 后台区分。
 
 ### 配置 Formspree（约 5 分钟，需你本人注册）
 1. 打开 https://formspree.io 注册（免费版每月有提交数量上限，以官网为准）。
@@ -51,6 +53,15 @@
 6. 上线后用两个表单各提交一次测试，确认邮箱能收到。
 
 > 任何兼容“POST JSON → 返回 2xx 且 `{ "ok": true }`”的服务都可以替代 Formspree（如 Getform、Basin 等），只需改 `FORM_ENDPOINT`。
+
+---
+
+## 二点五、早期项目板块（寻求投资的早期项目）
+
+- 页面：`raise.html`（列表 + 筛选：阶段 / 领域 / 资金需求区间）、`projects/*.html`（投资备忘录格式的示例详情页）、`founder-apply.html`、`investor-apply.html`。
+- 示例数据：`assets/raise-data.js`（3 个**虚构**示例，标注“示例 · 非真实项目”）；列表渲染与筛选在 `assets/raise.js`。
+- 合规边界（请勿删改）：仅展示 + 核验 + 人工引荐；不经手资金、不接受投资、不公布估值/股权等条款、不承诺回报、不面向公众招揽投资；完整资料与创始人联系方式仅在投资人通过审核且创始人同意后人工提供。免责声明见 `terms.html#early-stage`。
+- 新增真实项目时：复制一个 `projects/*.html` 示例改写（去掉“示例”标注与横幅），并在 `assets/raise-data.js` 中加入一条（删除示例条目时同步更新 `sitemap.xml`）。**上线真实项目前，建议请律师审阅条款与页面措辞。**
 
 ---
 
