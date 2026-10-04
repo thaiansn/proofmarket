@@ -27,6 +27,124 @@
   <link rel="stylesheet" href="assets/fonts.css">
   <link rel="stylesheet" href="assets/styles.css">
   <script>(function(){var l;try{var m=location.search.match(/[?&]lang=(zh|en)/);l=m?m[1]:localStorage.getItem('proofmarket_lang');if(m)localStorage.setItem('proofmarket_lang',l);}catch(e){}if(!l)l=/^zh/i.test(navigator.language||'')?'zh':'en';document.documentElement.lang=l;})();</script>
+  <script type="application/ld+json" data-pm-seo>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://thaiansn.github.io/proofmarket/#organization",
+   "name": "ProofMarket",
+   "url": "https://thaiansn.github.io/proofmarket/",
+   "logo": "https://thaiansn.github.io/proofmarket/assets/icon-192.png",
+   "image": "https://thaiansn.github.io/proofmarket/assets/og-image.png",
+   "email": "thaigore@gmail.com",
+   "description": "Pilot marketplace with manual ownership and revenue verification for small software businesses (SaaS, AI tools, apps, digital products, newsletters), plus an intro-only showcase of early-stage projects for reviewed investors. 0 real verified listings so far; all listings shown are fictional examples. No money handled; not a securities offering.",
+   "founder": {
+    "@type": "Person",
+    "name": "曹伟",
+    "alternateName": "Cao Wei"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tianjin",
+    "addressCountry": "CN"
+   },
+   "areaServed": "Worldwide",
+   "knowsLanguage": [
+    "en",
+    "zh"
+   ],
+   "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "thaigore@gmail.com",
+    "availableLanguage": [
+     "English",
+     "Chinese"
+    ]
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://thaiansn.github.io/proofmarket/#website",
+   "name": "ProofMarket",
+   "alternateName": "ProofMarket 小型软件项目交易市场",
+   "url": "https://thaiansn.github.io/proofmarket/",
+   "inLanguage": [
+    "en",
+    "zh"
+   ],
+   "publisher": {
+    "@id": "https://thaiansn.github.io/proofmarket/#organization"
+   },
+   "description": "Buy & sell small verified software businesses; early-stage projects (intro-only). Pilot — example listings are fictional and not for sale."
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://thaiansn.github.io/proofmarket/#webpage",
+   "url": "https://thaiansn.github.io/proofmarket/",
+   "name": "ProofMarket — Buy & sell small verified software businesses",
+   "description": "Pilot marketplace for small SaaS, AI tools, apps, digital products and newsletters. Manual ownership and revenue verification, 90-day listings, free for buyers, no commission. 中文独立开发者出售项目给海外买家。",
+   "inLanguage": [
+    "en",
+    "zh"
+   ],
+   "isPartOf": {
+    "@id": "https://thaiansn.github.io/proofmarket/#website"
+   },
+   "publisher": {
+    "@id": "https://thaiansn.github.io/proofmarket/#organization"
+   }
+  },
+  {
+   "@type": "ItemList",
+   "name": "Example listings — not for sale (示例挂牌，非在售)",
+   "description": "Fictional example listings showing what a verified ProofMarket listing will look like. Not for sale. Verified live listings: 0 so far.",
+   "numberOfItems": 6,
+   "itemListOrder": "https://schema.org/ItemListUnordered",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "url": "https://thaiansn.github.io/proofmarket/businesses/formlet.html",
+     "name": "Formlet (example listing, not for sale)"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "url": "https://thaiansn.github.io/proofmarket/businesses/pixelsupply.html",
+     "name": "PixelSupply (example listing, not for sale)"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "url": "https://thaiansn.github.io/proofmarket/businesses/focuslane.html",
+     "name": "Focuslane (example listing, not for sale)"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "url": "https://thaiansn.github.io/proofmarket/businesses/stackbrief.html",
+     "name": "Stackbrief (example listing, not for sale)"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "url": "https://thaiansn.github.io/proofmarket/businesses/invoicenest.html",
+     "name": "InvoiceNest (example listing, not for sale)"
+    },
+    {
+     "@type": "ListItem",
+     "position": 6,
+     "url": "https://thaiansn.github.io/proofmarket/businesses/replywise.html",
+     "name": "Replywise (example listing, not for sale)"
+    }
+   ]
+  }
+ ]
+}
+  </script>
 </head>
 <body data-title-en="ProofMarket — Buy &amp; sell small verified software businesses" data-title-zh="ProofMarket — 小型软件项目交易市场（人工核验）" data-base="">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -148,8 +266,8 @@
             </select>
           </div>
         </div>
-        <p class="results-count" id="results-count" aria-live="polite"></p>
-        <div class="listing-grid" id="listing-grid"></div>
+        <p class="results-count" id="results-count" aria-live="polite"><span class="i18n-en">Showing 6 example listings (fictional, not for sale)</span><span class="i18n-zh">显示 6 个示例挂牌（虚构，非在售）</span></p>
+        <div class="listing-grid" id="listing-grid"><article class="card" data-category="saas"><div class="card-top"><span class="badge"><span class="i18n-en">SaaS</span><span class="i18n-zh">SaaS</span></span><span class="badge badge-example"><span class="i18n-en">Example · not for sale</span><span class="i18n-zh">示例 · 非在售</span></span></div><h3><a href="businesses/formlet.html">Formlet</a></h3><p class="card-tagline"><span class="i18n-en">Lightweight forms without the enterprise bloat.</span><span class="i18n-zh">没有企业级臃肿的轻量表单。</span></p><dl class="stats"><div class="stat"><dt><span class="i18n-en">MRR</span><span class="i18n-zh">月收入</span></dt><dd>$690</dd></div><div class="stat"><dt><span class="i18n-en">Profit</span><span class="i18n-zh">月利润</span></dt><dd>$520</dd></div><div class="stat"><dt><span class="i18n-en">Hours/wk</span><span class="i18n-zh">每周工时</span></dt><dd>2 <span class="i18n-en">h/wk</span><span class="i18n-zh">小时/周</span></dd></div><div class="stat"><dt><span class="i18n-en">Age</span><span class="i18n-zh">运营时长</span></dt><dd>14 <span class="i18n-en">mo</span><span class="i18n-zh">个月</span></dd></div></dl><div class="card-ask"><span><span class="i18n-en">Example asking price</span><span class="i18n-zh">示例要价</span></span><strong>$12,000</strong></div><a class="btn btn-secondary btn-sm" href="businesses/formlet.html"><span class="i18n-en">View example</span><span class="i18n-zh">查看示例</span></a></article><article class="card" data-category="digital"><div class="card-top"><span class="badge"><span class="i18n-en">Digital products</span><span class="i18n-zh">数字产品</span></span><span class="badge badge-example"><span class="i18n-en">Example · not for sale</span><span class="i18n-zh">示例 · 非在售</span></span></div><h3><a href="businesses/pixelsupply.html">PixelSupply</a></h3><p class="card-tagline"><span class="i18n-en">Design resources and templates sold on a quiet subscription.</span><span class="i18n-zh">以安静订阅方式出售的设计资源与模板。</span></p><dl class="stats"><div class="stat"><dt><span class="i18n-en">MRR</span><span class="i18n-zh">月收入</span></dt><dd>$1,250</dd></div><div class="stat"><dt><span class="i18n-en">Profit</span><span class="i18n-zh">月利润</span></dt><dd>$1,050</dd></div><div class="stat"><dt><span class="i18n-en">Hours/wk</span><span class="i18n-zh">每周工时</span></dt><dd>5 <span class="i18n-en">h/wk</span><span class="i18n-zh">小时/周</span></dd></div><div class="stat"><dt><span class="i18n-en">Age</span><span class="i18n-zh">运营时长</span></dt><dd>32 <span class="i18n-en">mo</span><span class="i18n-zh">个月</span></dd></div></dl><div class="card-ask"><span><span class="i18n-en">Example asking price</span><span class="i18n-zh">示例要价</span></span><strong>$18,000</strong></div><a class="btn btn-secondary btn-sm" href="businesses/pixelsupply.html"><span class="i18n-en">View example</span><span class="i18n-zh">查看示例</span></a></article><article class="card" data-category="mobile"><div class="card-top"><span class="badge"><span class="i18n-en">Mobile</span><span class="i18n-zh">移动应用</span></span><span class="badge badge-example"><span class="i18n-en">Example · not for sale</span><span class="i18n-zh">示例 · 非在售</span></span></div><h3><a href="businesses/focuslane.html">Focuslane</a></h3><p class="card-tagline"><span class="i18n-en">A calm productivity planner for people who hate noisy to-do apps.</span><span class="i18n-zh">给讨厌嘈杂待办应用的人准备的平静生产力规划器。</span></p><dl class="stats"><div class="stat"><dt><span class="i18n-en">MRR</span><span class="i18n-zh">月收入</span></dt><dd>$1,450</dd></div><div class="stat"><dt><span class="i18n-en">Profit</span><span class="i18n-zh">月利润</span></dt><dd>$1,180</dd></div><div class="stat"><dt><span class="i18n-en">Hours/wk</span><span class="i18n-zh">每周工时</span></dt><dd>3 <span class="i18n-en">h/wk</span><span class="i18n-zh">小时/周</span></dd></div><div class="stat"><dt><span class="i18n-en">Age</span><span class="i18n-zh">运营时长</span></dt><dd>18 <span class="i18n-en">mo</span><span class="i18n-zh">个月</span></dd></div></dl><div class="card-ask"><span><span class="i18n-en">Example asking price</span><span class="i18n-zh">示例要价</span></span><strong>$28,500</strong></div><a class="btn btn-secondary btn-sm" href="businesses/focuslane.html"><span class="i18n-en">View example</span><span class="i18n-zh">查看示例</span></a></article><article class="card" data-category="content"><div class="card-top"><span class="badge"><span class="i18n-en">Content</span><span class="i18n-zh">内容</span></span><span class="badge badge-example"><span class="i18n-en">Example · not for sale</span><span class="i18n-zh">示例 · 非在售</span></span></div><h3><a href="businesses/stackbrief.html">Stackbrief</a></h3><p class="card-tagline"><span class="i18n-en">A weekly briefing for engineering leaders who skim, not scroll.</span><span class="i18n-zh">给工程负责人的每周简报——浏览，不是刷屏。</span></p><dl class="stats"><div class="stat"><dt><span class="i18n-en">MRR</span><span class="i18n-zh">月收入</span></dt><dd>$2,200</dd></div><div class="stat"><dt><span class="i18n-en">Profit</span><span class="i18n-zh">月利润</span></dt><dd>$1,650</dd></div><div class="stat"><dt><span class="i18n-en">Hours/wk</span><span class="i18n-zh">每周工时</span></dt><dd>7 <span class="i18n-en">h/wk</span><span class="i18n-zh">小时/周</span></dd></div><div class="stat"><dt><span class="i18n-en">Age</span><span class="i18n-zh">运营时长</span></dt><dd>24 <span class="i18n-en">mo</span><span class="i18n-zh">个月</span></dd></div></dl><div class="card-ask"><span><span class="i18n-en">Example asking price</span><span class="i18n-zh">示例要价</span></span><strong>$34,000</strong></div><a class="btn btn-secondary btn-sm" href="businesses/stackbrief.html"><span class="i18n-en">View example</span><span class="i18n-zh">查看示例</span></a></article><article class="card" data-category="saas"><div class="card-top"><span class="badge"><span class="i18n-en">SaaS</span><span class="i18n-zh">SaaS</span></span><span class="badge badge-example"><span class="i18n-en">Example · not for sale</span><span class="i18n-zh">示例 · 非在售</span></span></div><h3><a href="businesses/invoicenest.html">InvoiceNest</a></h3><p class="card-tagline"><span class="i18n-en">Invoicing that stays out of the way for independent consultants.</span><span class="i18n-zh">为独立顾问打造的安静开票工具。</span></p><dl class="stats"><div class="stat"><dt><span class="i18n-en">MRR</span><span class="i18n-zh">月收入</span></dt><dd>$2,100</dd></div><div class="stat"><dt><span class="i18n-en">Profit</span><span class="i18n-zh">月利润</span></dt><dd>$1,750</dd></div><div class="stat"><dt><span class="i18n-en">Hours/wk</span><span class="i18n-zh">每周工时</span></dt><dd>4 <span class="i18n-en">h/wk</span><span class="i18n-zh">小时/周</span></dd></div><div class="stat"><dt><span class="i18n-en">Age</span><span class="i18n-zh">运营时长</span></dt><dd>26 <span class="i18n-en">mo</span><span class="i18n-zh">个月</span></dd></div></dl><div class="card-ask"><span><span class="i18n-en">Example asking price</span><span class="i18n-zh">示例要价</span></span><strong>$42,000</strong></div><a class="btn btn-secondary btn-sm" href="businesses/invoicenest.html"><span class="i18n-en">View example</span><span class="i18n-zh">查看示例</span></a></article><article class="card" data-category="ai"><div class="card-top"><span class="badge"><span class="i18n-en">AI tools</span><span class="i18n-zh">AI 工具</span></span><span class="badge badge-example"><span class="i18n-en">Example · not for sale</span><span class="i18n-zh">示例 · 非在售</span></span></div><h3><a href="businesses/replywise.html">Replywise</a></h3><p class="card-tagline"><span class="i18n-en">Draft customer replies that still sound like your team.</span><span class="i18n-zh">起草仍像你团队口吻的客户回复。</span></p><dl class="stats"><div class="stat"><dt><span class="i18n-en">MRR</span><span class="i18n-zh">月收入</span></dt><dd>$4,200</dd></div><div class="stat"><dt><span class="i18n-en">Profit</span><span class="i18n-zh">月利润</span></dt><dd>$2,700</dd></div><div class="stat"><dt><span class="i18n-en">Hours/wk</span><span class="i18n-zh">每周工时</span></dt><dd>8 <span class="i18n-en">h/wk</span><span class="i18n-zh">小时/周</span></dd></div><div class="stat"><dt><span class="i18n-en">Age</span><span class="i18n-zh">运营时长</span></dt><dd>16 <span class="i18n-en">mo</span><span class="i18n-zh">个月</span></dd></div></dl><div class="card-ask"><span><span class="i18n-en">Example asking price</span><span class="i18n-zh">示例要价</span></span><strong>$68,000</strong></div><a class="btn btn-secondary btn-sm" href="businesses/replywise.html"><span class="i18n-en">View example</span><span class="i18n-zh">查看示例</span></a></article></div>
       </div>
     </section>
 

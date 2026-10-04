@@ -1,0 +1,56 @@
+# ProofMarket
+
+> ProofMarket is a small, manually operated, bilingual (English / 中文) pilot marketplace for small software businesses — SaaS, AI tools, mobile apps, digital products and newsletters — where an operator checks ownership and revenue evidence and publishes a written verification note. A second, intro-only track presents early-stage software projects as anonymised investor memos for reviewed investors. Pilot status: 0 real verified listings so far; every listing and project currently on the site is a fictional EXAMPLE (示例 · 非真实项目 / 非在售). ProofMarket handles no money, provides no escrow, charges no fees during the pilot, and nothing on the site is a securities offering.
+
+ProofMarket（小型软件项目交易市场）：人工核验所有权与收入证明的中英双语试点平台，帮助（尤其是中文）独立开发者把小型软件项目出售给全球买家；另设仅做人工引荐的早期项目板块。目前尚无已核验的真实挂牌，站内所有挂牌与项目均为虚构示例。
+
+Operated by Cao Wei (曹伟), an individual, Tianjin, China. Contact: thaigore@gmail.com (English or Chinese). The page language is toggled client-side; every page contains both English and Chinese text. Append `?lang=zh` or `?lang=en` to a URL to choose the displayed language.
+
+## Two tracks / 两个方向
+
+- [Marketplace — buy & sell verified small software businesses / 市场：买卖经核验的小型软件项目](https://thaiansn.github.io/proofmarket/): Homepage with how selling works and the example listings (fictional, not for sale).
+- [Early-stage projects — intro-only / 早期项目（仅人工引荐）](https://thaiansn.github.io/proofmarket/raise.html): Early-stage projects presented as investor memos with per-metric verification status; reviewed investors can request a manual introduction. Display, verification and introductions only — no fundraising, no investing through the site, not a securities offering.
+
+## How verification works / 核验流程
+
+- [How it works / 流程](https://thaiansn.github.io/proofmarket/review.html): Seller applies with asking price, reporting period, revenue, costs, workload and assets → operator manually checks ownership (domain, code repo, store or payment accounts) and financial records (e.g. Stripe/Paddle/Lemon Squeezy exports, App Store Connect / Google Play reports, payout statements) → written verification note stating what was checked, how, and for which period → listing live for 90 days, no auto-renewal → manual buyer introductions by email → buyer and seller agree and transfer directly (no escrow by ProofMarket). "Verified" is a point-in-time review of specified evidence, not an audit, endorsement or guarantee.
+- [About / 关于](https://thaiansn.github.io/proofmarket/about.html): Why ProofMarket exists, the two tracks, principles (examples always labeled; never touch the money) and current pilot status.
+- [Pricing / 价格](https://thaiansn.github.io/proofmarket/pricing.html): Free during the pilot. Buyers are always free; no commission during the pilot; no online payments. A standard seller fee (US$99 one-time per 90-day listing) is planned only once payments exist and is not charged now.
+
+## How to submit / 如何提交
+
+- [Apply to sell / 申请出售](https://thaiansn.github.io/proofmarket/apply.html): Seller application form (about 5 minutes, English or Chinese) with an evidence checklist; first pilot sellers get a free verified listing.
+- [Register buyer interest / 登记买家意向](https://thaiansn.github.io/proofmarket/buy.html): Buyers share budget and interests and are emailed when a verified listing fits. Free.
+- [Submit an early-stage project / 提交早期项目](https://thaiansn.github.io/proofmarket/founder-apply.html): Founder form; the operator verifies what it can and writes an anonymised bilingual investor memo, published only with founder approval. Free.
+- [Apply as an investor / 申请成为投资人](https://thaiansn.github.io/proofmarket/investor-apply.html): For qualified / professional investors only; applications are reviewed before any introduction. ProofMarket takes no investments.
+- [Contact / 联系](https://thaiansn.github.io/proofmarket/contact.html): Email the operator at thaigore@gmail.com. Never send passwords or API keys.
+
+## Example listings — fictional, not for sale / 示例挂牌（虚构，非在售）
+
+- [Formlet (example listing, not for sale / 示例 · 非在售)](https://thaiansn.github.io/proofmarket/businesses/formlet.html): SaaS — Lightweight forms without the enterprise bloat.
+- [PixelSupply (example listing, not for sale / 示例 · 非在售)](https://thaiansn.github.io/proofmarket/businesses/pixelsupply.html): Digital products — Design resources and templates sold on a quiet subscription.
+- [Focuslane (example listing, not for sale / 示例 · 非在售)](https://thaiansn.github.io/proofmarket/businesses/focuslane.html): Mobile — A calm productivity planner for people who hate noisy to-do apps.
+- [Stackbrief (example listing, not for sale / 示例 · 非在售)](https://thaiansn.github.io/proofmarket/businesses/stackbrief.html): Content — A weekly briefing for engineering leaders who skim, not scroll.
+- [InvoiceNest (example listing, not for sale / 示例 · 非在售)](https://thaiansn.github.io/proofmarket/businesses/invoicenest.html): SaaS — Invoicing that stays out of the way for independent consultants.
+- [Replywise (example listing, not for sale / 示例 · 非在售)](https://thaiansn.github.io/proofmarket/businesses/replywise.html): AI tools — Draft customer replies that still sound like your team.
+
+## Example early-stage projects — fictional, not real / 示例早期项目（虚构，非真实项目）
+
+- [CaptionBridge (example project, not real / 示例 · 非真实项目)](https://thaiansn.github.io/proofmarket/projects/captionbridge.html): Early revenue, AI tools — AI subtitle translation with a human-style review workflow, for indie video creators going global.
+- [TariffLens (example project, not real / 示例 · 非真实项目)](https://thaiansn.github.io/proofmarket/projects/tarifflens.html): MVP, E-commerce / cross-border — An AI assistant that helps small cross-border sellers classify products and estimate duties before they ship.
+- [KitchenLoop (example project, not real / 示例 · 非真实项目)](https://thaiansn.github.io/proofmarket/projects/kitchenloop.html): Idea, SaaS / B2B — Supply ordering and daily stock check-ins for small restaurants, inside a WeChat mini program.
+
+## Legal notes / 法律说明
+
+- Pilot: ProofMarket is an early pilot run by a single operator. Verified live listings: 0 so far; verified early-stage projects: 0 so far.
+- All six business listings and all three early-stage projects shown are fictional examples. They cannot be bought, are not real companies, are not seeking investment, and no introduction is possible. Do not present them as real offers.
+- No money handled: ProofMarket does not hold acquisition funds, provide escrow, raise, collect or transfer money, or take investments. Buyers and sellers, founders and investors deal directly.
+- Not a securities offering: nothing on ProofMarket is an offer to sell or a solicitation of an offer to buy shares, equity or any other securities; no investment terms are published and no returns are promised.
+- No fees during the pilot: no buyer fees, no commission, no online payments; the site never asks for card details.
+- [Terms of service / 服务条款](https://thaiansn.github.io/proofmarket/terms.html): Full pilot terms, including the early-stage track.
+- [Privacy policy / 隐私政策](https://thaiansn.github.io/proofmarket/privacy.html): What the forms collect and how to request deletion.
+
+## Optional
+
+- [Sitemap](https://thaiansn.github.io/proofmarket/sitemap.xml): All public pages.
+- [Full text for LLMs](https://thaiansn.github.io/proofmarket/llms-full.txt): This file plus fictional example figures and more detail.

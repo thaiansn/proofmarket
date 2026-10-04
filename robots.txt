@@ -1,3 +1,5 @@
+# ProofMarket — all crawlers welcome, including AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, etc.).
+# LLM-friendly summary: https://thaiansn.github.io/proofmarket/llms.txt — full text: https://thaiansn.github.io/proofmarket/llms-full.txt
 User-agent: *
 Allow: /
 Disallow: /404.html
