@@ -579,3 +579,8 @@ html[lang="en"] .i18n-zh { display: none !important; }
 .funds-table tr:last-child th { font-weight: 500; color: var(--ink-soft); }
 .funds-table tr:last-child td { font-weight: 400; color: inherit; }
 .ask-range .i18n-zh, .card-ask strong .i18n-zh, .metric-val .i18n-zh, .stat dd .i18n-zh { font-family: var(--font-sans); }
+
+/* Collapsed fictional examples on the homepage */
+.examples-collapse > summary { cursor: pointer; padding: 0.5rem 0; }
+.examples-collapse > summary h2 { font-size: 1.25rem; }
+.examples-collapse[open] > summary { margin-bottom: 1rem; }

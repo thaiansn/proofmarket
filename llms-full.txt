@@ -1,14 +1,14 @@
 # ProofMarket
 
-> ProofMarket is a small, manually operated, bilingual (English / 中文) pilot marketplace for small software businesses — SaaS, AI tools, mobile apps, digital products and newsletters — where an operator checks ownership and revenue evidence and publishes a written verification note. A second, intro-only track presents early-stage software projects as anonymised investor memos for reviewed investors. Pilot status: 2 live real listings (PPT Fusion and FlyFinder, both pre-revenue, intro-only); every other listing and project on the site is a fictional EXAMPLE (示例 · 非真实项目 / 非在售). ProofMarket handles no money, provides no escrow, charges no fees during the pilot, and nothing on the site is a securities offering.
+> ProofMarket is a small, manually operated, bilingual (English / 中文) pilot marketplace for small software businesses — SaaS, AI tools, mobile apps, digital products and newsletters — where the operator reviews the evidence each seller can show and publishes a written verification note stating what was checked and what was not checked (pre-revenue listings have no revenue to verify). A second, intro-only track presents early-stage software projects as anonymised investor memos for reviewed investors. Pilot status: 2 live real listings (PPT Fusion and FlyFinder, both pre-revenue, intro-only); every other listing and project on the site is a fictional EXAMPLE (示例 · 非真实项目 / 非在售). ProofMarket handles no money, provides no escrow, charges no fees during the pilot, and nothing on the site is a securities offering.
 
-ProofMarket（小型软件项目交易市场）：人工核验所有权与收入证明的中英双语试点平台，帮助（尤其是中文）独立开发者把小型软件项目出售给全球买家；另设仅做人工引荐的早期项目板块。目前有 2 个真实在售挂牌（PPT Fusion、FlyFinder，均尚无营收，仅人工引荐）；其余挂牌与项目均为虚构示例。
+ProofMarket（小型软件项目交易市场）：中英双语试点平台（每个挂牌附书面核验说明，写清核对了什么、没核对什么），帮助（尤其是中文）独立开发者把小型软件项目出售给全球买家；另设仅做人工引荐的早期项目板块。目前有 2 个真实在售挂牌（PPT Fusion、FlyFinder，均尚无营收，仅人工引荐）；其余挂牌与项目均为虚构示例。
 
 Operated by Cao Wei (曹伟), an individual, Tianjin, China. Contact: thaigore@gmail.com (English or Chinese). The page language is toggled client-side; every page contains both English and Chinese text. Append `?lang=zh` or `?lang=en` to a URL to choose the displayed language.
 
 ## Two tracks / 两个方向
 
-- [Marketplace — buy & sell verified small software businesses / 市场：买卖经核验的小型软件项目](https://thaiansn.github.io/proofmarket/): Homepage with how selling works and the example listings (fictional, not for sale).
+- [Marketplace — buy & sell small software businesses, each with a note on what was checked / 市场：买卖小型软件项目（写清核对了什么、没核对什么）](https://thaiansn.github.io/proofmarket/): Homepage: live listings first, how selling works, and collapsed example listings (fictional, not for sale).
 - [Early-stage projects — intro-only / 早期项目（仅人工引荐）](https://thaiansn.github.io/proofmarket/raise.html): Early-stage projects presented as investor memos with per-metric verification status; reviewed investors can request a manual introduction. Display, verification and introductions only — no fundraising, no investing through the site, not a securities offering.
 
 ## How verification works / 核验流程
@@ -42,8 +42,8 @@ Businesses without verifiable revenue evidence or clear ownership; grey-hat traf
 
 ## How to submit / 如何提交
 
-- [Apply to sell / 申请出售](https://thaiansn.github.io/proofmarket/apply.html): Seller application form (about 5 minutes, English or Chinese) with an evidence checklist; first pilot sellers get a free verified listing.
-- [Register buyer interest / 登记买家意向](https://thaiansn.github.io/proofmarket/buy.html): Buyers share budget and interests and are emailed when a verified listing fits. Free.
+- [Apply to sell / 申请出售](https://thaiansn.github.io/proofmarket/apply.html): Seller application form (about 5 minutes, English or Chinese) with an evidence checklist; first pilot sellers get a free listing with a written verification note.
+- [Register buyer interest / 登记买家意向](https://thaiansn.github.io/proofmarket/buy.html): Buyers share budget and interests and are emailed when a listing fits; live listings link here with the listing prefilled (?project=). Free.
 - [Submit an early-stage project / 提交早期项目](https://thaiansn.github.io/proofmarket/founder-apply.html): Founder form; the operator verifies what it can and writes an anonymised bilingual investor memo, published only with founder approval. Free.
 - [Apply as an investor / 申请成为投资人](https://thaiansn.github.io/proofmarket/investor-apply.html): For qualified / professional investors only; applications are reviewed before any introduction. ProofMarket takes no investments.
 - [Contact / 联系](https://thaiansn.github.io/proofmarket/contact.html): Email the operator at thaigore@gmail.com. Never send passwords or API keys.

@@ -72,7 +72,7 @@
 <body data-title-en="Buy a small profitable software business — register buyer interest | ProofMarket" data-title-zh="收购小型盈利软件项目 — 登记买家意向 | ProofMarket">
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="pilot-banner" role="note">
-    <span class="i18n-en"><strong>Pilot:</strong> the first sellers get a free verified listing. No payment is taken on this site.</span><span class="i18n-zh"><strong>试点期：</strong>首批卖家免费获得核验挂牌。本站不收取任何费用。</span>
+    <span class="i18n-en"><strong>Pilot:</strong> the first sellers get a free listing with a written verification note. No payment is taken on this site.</span><span class="i18n-zh"><strong>试点期：</strong>首批卖家免费挂牌并获得书面核验说明。本站不收取任何费用。</span>
     <a href="apply.html"><span class="i18n-en">Apply →</span><span class="i18n-zh">立即申请 →</span></a>
   </div>
   <header class="site-header">
@@ -98,19 +98,27 @@
       <div class="prose" style="max-width:none;">
         <p class="hero-kicker"><span class="i18n-en">Buyers</span><span class="i18n-zh">买家</span></p>
         <h1><span class="i18n-en">Tell us what you want to buy.</span><span class="i18n-zh">告诉我们你想收购什么。</span></h1>
-        <p><span class="i18n-en">Buyers are always free. Share your budget and interests and the operator will email you when a verified listing fits — then arrange an introduction to the seller.</span><span class="i18n-zh">买家始终免费。留下预算与偏好，有合适的核验挂牌时运营者会邮件通知你，并安排与卖家对接。</span></p>
+        <p><span class="i18n-en">Buyers are always free. Ask about a live listing, or share your interests and the operator will email you when a listing fits — then arrange an introduction to the seller.</span><span class="i18n-zh">买家始终免费。可直接询价在售挂牌，或留下偏好，有合适的挂牌时运营者会邮件通知你，并安排与卖家对接。</span></p>
         <h2><span class="i18n-en">Good to know</span><span class="i18n-zh">须知</span></h2>
         <ul>
-          <li><span class="i18n-en">Every listing comes with a written verification note describing what was checked.</span><span class="i18n-zh">每个挂牌都附有书面核验说明，写明核对了哪些内容。</span></li>
+          <li><span class="i18n-en">Every listing comes with a written verification note saying what was checked and what was not.</span><span class="i18n-zh">每个挂牌都附有书面核验说明，写明核对了什么、没核对什么。</span></li>
           <li><span class="i18n-en">Many sellers are indie developers based in China; the operator can help bridge language and time zones.</span><span class="i18n-zh">许多卖家是身在中国的独立开发者；运营者可以协助跨越语言与时区障碍。</span></li>
           <li><span class="i18n-en">You do your own due diligence and agree the deal directly with the seller. ProofMarket does not hold funds — use a third-party escrow service.</span><span class="i18n-zh">你需自行尽调并直接与卖家达成交易。ProofMarket 不经手资金——建议使用第三方托管服务。</span></li>
-          <li><span class="i18n-en">The listings currently shown are examples only; real listings will be announced to registered buyers first.</span><span class="i18n-zh">目前展示的挂牌仅为示例；真实挂牌会优先通知已登记的买家。</span></li>
+          <li><span class="i18n-en">Live listings now: <a href="businesses/ppt-fusion.html">PPT Fusion</a> ($1,100) and <a href="businesses/flyfinder.html">FlyFinder</a> ($2,499), both pre-revenue. Other listings on the site are fictional examples.</span><span class="i18n-zh">当前在售：<a href="businesses/ppt-fusion.html">PPT Fusion</a>（$1,100）与 <a href="businesses/flyfinder.html">FlyFinder</a>（$2,499），均尚无营收。站内其他挂牌为虚构示例。</span></li>
         </ul>
         <p class="muted"><span class="i18n-en">Questions? Email </span><span class="i18n-zh">有疑问？发邮件至 </span><a data-contact-email href="mailto:thaigore@gmail.com">thaigore@gmail.com</a></p>
       </div>
       <div class="form-card">
         <div class="form-status" hidden aria-live="polite"></div>
         <form class="pm-form" data-form-type="buyer" action="mailto:thaigore@gmail.com" method="post" enctype="text/plain">
+          <div class="form-group" id="inquire">
+            <label for="f-project"><span class="i18n-en">Listing you're asking about</span><span class="i18n-zh">想询价的挂牌</span><span class="req" aria-hidden="true">*</span></label>
+            <select id="f-project" name="project" data-label="Listing / 挂牌" required>
+              <option value="general" data-en="No specific listing — tell me about new ones" data-zh="暂无具体挂牌——有新挂牌时通知我">No specific listing — tell me about new ones</option>
+              <option value="PPT Fusion" data-en="PPT Fusion — asking $1,100" data-zh="PPT Fusion — 要价 $1,100">PPT Fusion — asking $1,100</option>
+              <option value="FlyFinder" data-en="FlyFinder — asking $2,499" data-zh="FlyFinder — 要价 $2,499">FlyFinder — asking $2,499</option>
+            </select>
+          </div>
           <div class="form-row">
           <div class="form-group">
             <label for="f-name"><span class="i18n-en">Your name</span><span class="i18n-zh">姓名</span><span class="req" aria-hidden="true">*</span></label>
@@ -122,8 +130,8 @@
           </div>
           </div>
           <div class="form-group">
-            <label for="f-budget"><span class="i18n-en">Budget range (USD)</span><span class="i18n-zh">预算范围（美元）</span><span class="req" aria-hidden="true">*</span></label>
-            <select id="f-budget" name="budget" data-label="Budget range (USD) / 预算范围（美元）" required><option value="" data-en="Choose…" data-zh="请选择…">Choose…</option><option value="under_5k" data-en="Under $5k" data-zh="5 千美元以下">Under $5k</option><option value="5k_20k" data-en="$5k – $20k" data-zh="5 千 – 2 万美元">$5k – $20k</option><option value="20k_50k" data-en="$20k – $50k" data-zh="2 万 – 5 万美元">$20k – $50k</option><option value="50k_150k" data-en="$50k – $150k" data-zh="5 万 – 15 万美元">$50k – $150k</option><option value="150k_plus" data-en="$150k+" data-zh="15 万美元以上">$150k+</option></select>
+            <label for="f-budget"><span class="i18n-en">Budget range (USD)</span><span class="i18n-zh">预算范围（美元）</span><span class="opt"><span class="i18n-en">(optional)</span><span class="i18n-zh">（选填）</span></span></label>
+            <select id="f-budget" name="budget" data-label="Budget range (USD) / 预算范围（美元）"><option value="" data-en="Choose…" data-zh="请选择…">Choose…</option><option value="under_5k" data-en="Under $5k" data-zh="5 千美元以下">Under $5k</option><option value="5k_20k" data-en="$5k – $20k" data-zh="5 千 – 2 万美元">$5k – $20k</option><option value="20k_50k" data-en="$20k – $50k" data-zh="2 万 – 5 万美元">$20k – $50k</option><option value="50k_150k" data-en="$50k – $150k" data-zh="5 万 – 15 万美元">$50k – $150k</option><option value="150k_plus" data-en="$150k+" data-zh="15 万美元以上">$150k+</option></select>
           </div>
           <div class="form-group">
             <fieldset class="check-grid">
@@ -154,7 +162,7 @@
     <div class="wrap footer-grid">
       <div class="footer-brand">
         <a class="logo" href="index.html">Proof<span>Market</span></a>
-        <p><span class="i18n-en">A manually verified pilot marketplace for small software businesses — SaaS, AI tools, apps, digital products and newsletters — plus an intro-only showcase of early-stage projects for reviewed investors.</span><span class="i18n-zh">人工核验的小型软件项目交易试点市场——SaaS、AI 工具、App、数字产品与 Newsletter；另设面向已审核投资人、仅做人工引荐的早期项目展示。</span></p>
+        <p><span class="i18n-en">A pilot marketplace for small software businesses, each listing with a written note on what was checked and what wasn't — SaaS, AI tools, apps, digital products and newsletters — plus an intro-only showcase of early-stage projects for reviewed investors.</span><span class="i18n-zh">小型软件项目交易试点市场（每个挂牌写清核对了什么、没核对什么）——SaaS、AI 工具、App、数字产品与 Newsletter；另设面向已审核投资人、仅做人工引荐的早期项目展示。</span></p>
       </div>
       <div class="footer-col">
         <h4><span class="i18n-en">Marketplace</span><span class="i18n-zh">市场</span></h4>
@@ -192,5 +200,6 @@
   </footer>
   <script src="assets/config.js"></script>
   <script src="assets/app.js"></script>
+<script data-goatcounter="https://proofmarket.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

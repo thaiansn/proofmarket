@@ -188,6 +188,7 @@
     if (type === "seller") return "ProofMarket seller application: " + (d.project_name || d.name || "");
     if (type === "founder_raise") return "ProofMarket early-stage project (founder): " + (d.project_name || d.name || "") + (d.stage ? " [" + d.stage + "]" : "");
     if (type === "investor") return "ProofMarket investor application: " + (d.name || "") + (d.check_size ? " (" + d.check_size + ")" : "");
+    if (d.project && d.project !== "general") return "ProofMarket buyer inquiry — " + d.project + ": " + (d.name || "") + (d.budget ? " (" + d.budget + ")" : "");
     return "ProofMarket buyer interest: " + (d.name || "") + (d.budget ? " (" + d.budget + ")" : "");
   }
 
@@ -373,12 +374,41 @@
     });
   }
 
+  /* —— Buyer form: prefill listing from ?project= (slug or name) —— */
+  function initProjectPrefill() {
+    var sel = document.getElementById("f-project");
+    if (!sel) return;
+    var m = location.search.match(/[?&]project=([^&#]*)/);
+    if (!m) return;
+    var raw = "";
+    try { raw = decodeURIComponent(m[1].replace(/\+/g, " ")).trim(); } catch (e) { raw = m[1]; }
+    if (!raw) return;
+    var norm = function (x) { return String(x).toLowerCase().replace(/[^a-z0-9]/g, ""); };
+    var key = norm(raw), hit = null;
+    Array.prototype.forEach.call(sel.options, function (o) { if (!hit && o.value !== "general" && norm(o.value) === key) hit = o; });
+    if (!hit) {
+      var safe = raw.replace(/[^\w .\-]/g, "").slice(0, 80);
+      if (!safe) return;
+      hit = document.createElement("option");
+      hit.value = safe; hit.textContent = safe;
+      hit.setAttribute("data-en", safe); hit.setAttribute("data-zh", safe);
+      sel.appendChild(hit);
+    }
+    sel.value = hit.value;
+    sel.setAttribute("data-default", hit.value);
+    var form = sel.form;
+    if (form) form.addEventListener("reset", function () { setTimeout(function () { sel.value = sel.getAttribute("data-default") || "general"; }, 0); });
+  }
+
   function init() {
     initContact();
     initLang();
     initMobileNav();
     initFilters();
     initForms();
+    initProjectPrefill();
+    var openEx = function () { if (location.hash === "#marketplace") { var ex = document.querySelector("#marketplace details"); if (ex) ex.open = true; } };
+    openEx(); window.addEventListener("hashchange", openEx);
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init(); // e.g. when loaded dynamically (404.html)
